@@ -1,0 +1,191 @@
+{
+  "view": "View",
+  "name": "CatalogItem",
+  "header": "Product",
+  "rows": [{
+      "view": "Toolbar",
+      "name": "Toolbar",
+      "owner": "CatalogItem",
+      "composition": "default",
+      "elements": []
+    },
+    {
+      "view": "layout",
+      "name": "Layout",
+      "type": "form",
+      "rows": [{
+        "rows": [{
+            "minWidth": 650,
+            "cols": [{
+                "view": "Lookup",
+                "name": "Parent",
+                "label": "Parent",
+                "minWidth": 500,
+                "dataLink": "item.Parent",
+                "events": {
+                  "onChange": "Parent_onChange"
+                }
+              },
+              {
+                "view": "Checkbox",
+                "name": "HasVariants",
+                "labelRight": "Has variants",
+                "labelAlign": "left",
+                "labelWidth": 10,
+                "dataLink": "item.HasVariants",
+                "events": {
+                  "onChange": "hasVariants_onChange"
+                }
+              }
+            ]
+          },
+          {
+            "view": "Text",
+            "name": "Name",
+            "label": "Name",
+            "dataLink": "item.Name"
+          },
+          {
+            "cols": [{
+              "view": "Text",
+              "name": "Code",
+              "label": "Code",
+              "dataLink": "item.Code"
+            }]
+          },
+          {
+            "view": "Text",
+            "name": "FullName",
+            "label": "Full name",
+            "labelWidth": 110,
+            "dataLink": "item.FullName"
+          },
+          {
+            "view": "Text",
+            "name": "Description",
+            "label": "Description",
+            "labelWidth": 110,
+            "dataLink": "item.Description"
+          },
+          {
+            "view": "Group",
+            "name": "ProductSet",
+            "rows": [{
+                "cols": [{
+                    "view": "Lookup",
+                    "name": "ProductSort",
+                    "label": "Product sort",
+                    "labelWidth": 110,
+                    "dataLink": "item.ProductSort"
+                  },
+                  {
+                    "view": "Lookup",
+                    "name": "Unit",
+                    "label": "Unit",
+                    "width": 230,
+                    "dataLink": "item.Unit"
+                  }
+                ]
+              },
+              {
+                "cols": [{
+                    "view": "Lookup",
+                    "name": "Producer",
+                    "label": "Producer",
+                    "dataLink": "item.Producer"
+                  },
+                  {
+                    "view": "Lookup",
+                    "name": "Brand",
+                    "label": "Brand",
+                    "dataLink": "item.Brand"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "view": "Group",
+            "name": "VariationSet",
+            "rows": [{
+              "cols": [{
+                  "view": "Text",
+                  "name": "SKU",
+                  "label": "SKU",
+                  "dataLink": "item.SKU"
+                },
+                {
+                  "view": "Text",
+                  "name": "WeightNetto",
+                  "label": "Weight netto",
+                  "labelWidth": 110,
+                  "width": 170,
+                  "type": "number",
+                  "attributes": {
+                    "step": "0.001"
+                  },
+                  "dataLink": "item.WeightNetto"
+                },
+                {
+                  "view": "Text",
+                  "name": "WeightBrutto",
+                  "label": "Weight brutto",
+                  "labelWidth": 110,
+                  "width": 170,
+                  "type": "number",
+                  "attributes": {
+                    "step": "0.001"
+                  },
+                  "dataLink": "item.WeightBrutto"
+                }
+              ]
+            }]
+          },
+          {
+            "view": "Lookup",
+            "name": "Variation",
+            "label": "Variation",
+            "dataLink": "item.Variation"
+          },
+          {
+            "view": "Group",
+            "name": "AttributesSet",
+            "rows": [
+                { 
+                  "view": "Toolbar",
+                  "name": "Toolbar",
+                  "owner": "Attributes", 
+                  "composition": "default", 
+                  "elements": []
+                },
+                {
+                  "view": "Datatable",
+                  "name": "Attributes",
+                  "label": "Attributes",
+                  "dataLink": "item.Attributes",
+                  "editable": true,
+                  "editaction": "dblclick",
+                  "select": true,
+                  "multiselect": true,
+                  "scroll": "x",
+                  "header": true,
+                  "columns": [{
+                      "id": "order",
+                      "header": "Lp.",
+                      "width": 30
+                    },
+                    {
+                      "id": "Attribute",
+                      "header": "Attribute",
+                      "editor": "lookup",
+                      "fillspace": true
+                    }
+                  ]
+                }
+            ]
+          }
+        ]
+      }]
+    }
+  ]
+}

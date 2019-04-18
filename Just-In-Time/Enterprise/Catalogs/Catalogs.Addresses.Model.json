@@ -1,0 +1,66 @@
+{
+    "24a17273-e423-4c8e-8490-68bf2eb05154": {
+        "name": "Addresses",
+        "cube": "Enterprise",
+        "class": "Catalogs",
+        "tableId": "CT_Mj1iI6tu",
+        "title": "Addresses",
+        "description": "Addresses of the componies and partners",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 0,
+        "codeLenght": 5,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 25,
+        "nameLang": ["ru", "pl"],
+        "template": "#Name#",
+        "owners": [
+            "7f284527-6d57-4ce6-8573-a047b3bcc575"
+        ],
+        "attributes": {
+            "Address1": {
+                "fieldId": "FL_T6G0VxZd",
+                "title": "Address 1",
+                "description": "Address line (first)",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 255,
+                    "lang": ["ru", "pl"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Address2": {
+                "fieldId": "FL_Fo0k0TZz",
+                "title": "Address 2",
+                "description": "Address line (second)",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 255,
+                    "lang": ["ru", "pl"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "PostalCode": {
+                "fieldId": "FL_5hmYN5nE",
+                "title": "Postal code",
+                "description": "Postal code",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 15
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "eShop",
+  "version": "0.0.1",
+  "description": "Internet shop",
+  "main": "Cube.js",
+  "author": "Max Orlov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.0.0"
+  }
+}

@@ -1,0 +1,202 @@
+html{
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Century Gothic';
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-left: 0;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 2em;
+  padding-left: 0;
+}
+
+#menu-container {
+  width: 410px;
+  position:fixed;
+  left: 0px;
+  top: 100px;
+	z-index: 70;
+	padding: 0;
+  margin: 0;
+}
+
+#menu {
+  vertical-align: top;
+	padding: 0;
+  margin: 0;
+}
+
+#logo {
+  width: 185px;
+  margin-top: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0 px;
+}
+
+#menu ul {
+  width: inherit;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+}
+#menu li {
+  text-align: right;
+  height: 2em;
+  padding-right: 25px;
+}
+#menu li.active{
+  color: #2b2927;
+  font-weight: bold;
+}
+#menu li a{
+  color: #2b2927;
+  text-decoration: none;
+}
+#menu li.active a:hover{
+  color: #2b2927;
+}
+#menu li:hover{
+  color: #2b2927;
+}
+#menu li a,
+#menu li.active a{	
+  display:block;
+  color: #2b2927;
+}
+
+#fullpage {
+  margin: 0px;
+  margin-left: 410px;
+
+}
+
+.section {
+  margin: 0px;
+  margin-left: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.cover_title {
+  font-family: 'Century Gothic';
+  color: white;
+  background-color: transparent;
+  width: 100%;
+}
+
+.webix_el_button button {
+  background: none;
+  color: white;
+  border-radius: 0;
+  border: 1px solid white;
+  font-family: 'Century Gothic';
+}
+
+.webix_el_button button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 0;
+  border: 1px solid white;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.page_01 {
+  background-image: url(../../files/img/D08-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.page_02 {
+  background-color: #ad7b48;
+}
+
+.page_03 {
+  background-color: #44754e;
+}
+
+.page_04 {
+  background-color: #473555;
+}
+
+.page_05 {
+  background-color: #6d4853;
+}
+
+.page_06 {
+  background-color: #5b663b;
+}
+
+.page_07 {
+  background-color: #5e3131;
+}
+
+.page_08 {
+  background-color: #608492;
+}
+
+.sidebar {
+  padding-right: 20px;
+}
+
+.webix_list_item {
+  border: none;
+  text-transform: lowercase;
+  text-align: right;
+  font-size: 14pt;
+  font-family: 'Century Gothic';
+}
+
+.webix_list_item.webix_selected {
+  box-shadow: none;
+  background: none;
+  font-weight: bold; 
+}
+
+.webix_list .webix_list_item.webix_selected {
+  border-bottom: none;
+}
+
+.webixtype_base:focus {
+  background-color: transparent;
+}
+
+.borderless {
+  border: none;
+}
+
+.eshop_button {
+  background-color: #5b663b;
+  opacity: 1.0;
+}
+
+.eshop_button_inactive {
+  background-color: #702051;
+  opacity: 0.8;
+}
+
+.eshop_button_swatch {
+  background-size:     contain;                     
+  background-repeat:   no-repeat;
+  background-position: center center;   
+}

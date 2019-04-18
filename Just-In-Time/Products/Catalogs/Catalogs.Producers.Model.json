@@ -1,0 +1,68 @@
+{
+    "2a33e1f1-6739-40fc-ad74-5fecbf8c55bd": {
+        "name": "Producers",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_SJeQlqjN",
+        "title": "Producers",
+        "description": "Producers of products",
+        "multilevel": true,
+        "multilevelType": "folders",
+        "numberOfLevels": 2,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 50,
+        "nameLang": ["ru", "pl"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "Address1": {
+                "fieldId": "FL_judb0oVP",
+                "title": "Address 1",
+                "description": "Address line (first)",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 255,
+                    "lang": ["ru", "en", "pl"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Address2": {
+                "fieldId": "FL_ZKb6Ys8j",
+                "title": "Address 2",
+                "description": "Address line (second)",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 255,
+                    "lang": ["ru", "en", "pl"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Country": {
+                "fieldId": "FL_lA3ypqmR",
+                "title": "Country",
+                "description": "Country",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "Common",
+                        "class": "Catalogs",
+                        "modelId": "99d43988-5840-4b47-acf0-c16bb1b0ee75"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

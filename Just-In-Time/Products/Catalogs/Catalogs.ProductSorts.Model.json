@@ -1,0 +1,40 @@
+{
+    "606b0a6f-bf85-4f56-92f0-5640c936fc93": {
+        "name": "ProductSorts",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_x7UgFb51",
+        "title": "Product sorts",
+        "description": "Product sorts",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 1,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 50,
+        "nameLang": [],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "HSCode": {
+                "fieldId": "FL_zmKfVI4G",
+                "title": "HS Code",
+                "description": "Harmonized System Code",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "1333c392-ac67-43a0-9b3e-b3bdf00d8dd3"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

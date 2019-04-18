@@ -1,0 +1,42 @@
+{
+  "view": "View",
+  "name": "ShopProduct",
+  "title": "Shop",
+  "cols": [{
+      "rows": [{},
+        {
+          "view": "Carousel",
+          "name": "Images",
+          "cols": [
+
+          ]
+        },
+        {}
+      ]
+    },
+    {
+      "rows": [{
+          "view": "Label",
+          "name": "ProductTitle",
+          "dataLink": "item.FullName"
+        },
+        {
+          "view": "Group",
+          "name": "Options",
+          "rows": []
+        },
+        {
+          "view": "Button",
+          "name": "btnShopBedding",
+          "width": 300,
+          "label": "choose mine",
+          "value": 1,
+          "events": {
+            "onItemClick": "btnOK_onClick"
+          }
+        },
+        {}
+      ]
+    }
+  ]
+}

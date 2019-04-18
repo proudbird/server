@@ -1,0 +1,51 @@
+{
+    "16d1f82b-56b3-49b2-a122-7cbded394d23": {
+        "name": "Agreements",
+        "cube": "Enterprise",
+        "class": "Catalogs",
+        "tableId": "CT_fp9wd0Rr",
+        "title": "Agreements",
+        "description": "Agreements with partners",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 1,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 100,
+        "nameLang": ["ru", "pl"],
+        "template": "#Name#",
+        "owners": [
+            "7f284527-6d57-4ce6-8573-a047b3bcc575"
+        ],
+        "attributes": {
+            "Number": {
+                "fieldId": "FL_1Q0MorB7",
+                "title": "Number",
+                "description": "Number of the agreement",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 20
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Date": {
+                "fieldId": "FL_Sr7PIdoZ",
+                "title": "Date",
+                "description": "Date of the agreement",
+                "type": {
+                    "dataType": "DATE",
+                    "dateType": "date"
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

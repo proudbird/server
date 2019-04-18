@@ -1,0 +1,66 @@
+{
+    "68730508-232d-45cb-986f-70c4ecd03ed6": {
+        "name": "Variations",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_CkNdDLik",
+        "title": "Products variations",
+        "description": "Products variations",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 1,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 50,
+        "nameLang": ["ru", "pl", "en"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {},
+        "collections": {
+            "fa1b9331-d0ab-4e1e-ba9d-d7ac1e72e1e1": {
+                "name": "Combinations",
+                "class": "Collection",
+                "tableId": "CL_R4dvqlnN",
+                "attributes": {
+                    "Attribute": {
+                        "fieldId": "FL_JZFL9tTj",
+                        "title": "Attribute",
+                        "description": "Attribute",
+                        "type": {
+                            "dataType": "FK",
+                            "reference": {
+                                "cube": "this",
+                                "class": "Catalogs",
+                                "modelId": "fd006eed-37d8-4950-9645-6925d00a04ae"
+                            }
+                        },
+                        "defaultValue": "",
+                        "toolTip": "",
+                        "belonging": "item",
+                        "required": false
+                    },
+                    "Value": {
+                        "fieldId": "FL_9F1ScorH",
+                        "title": "Value",
+                        "description": "Attribute Value",
+                        "type": {
+                            "dataType": "FK",
+                            "reference": {
+                                "cube": "this",
+                                "class": "Catalogs",
+                                "modelId": "fd006eed-37d8-4950-9645-6925d00a04ae",
+                                "collection": "8c7e37d7-7d7a-447c-8802-905d601dbf16"
+                            }
+                        },
+                        "defaultValue": "",
+                        "toolTip": "",
+                        "belonging": "item",
+                        "required": false
+                    }
+                }
+            }
+        }
+    }
+}

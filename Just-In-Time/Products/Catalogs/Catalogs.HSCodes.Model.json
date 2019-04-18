@@ -1,0 +1,51 @@
+{
+    "1333c392-ac67-43a0-9b3e-b3bdf00d8dd3": {
+        "name": "HSCodes",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_s86o9cYp",
+        "title": "HS Codes",
+        "description": "Harmonized System Codes",
+        "multilevel": true,
+        "multilevelType": "foldersAndItems",
+        "numberOfLevels": 6,
+        "codeLenght": 10,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 255,
+        "nameLang": ["ru", "en", "pl"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "HSCode": {
+                "fieldId": "FL_xuEMYPVe",
+                "title": "HS Code",
+                "description": "HS Code",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 10,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Description": {
+                "fieldId": "FL_1e8ONHhp",
+                "title": "Description",
+                "description": "Description",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 0,
+                    "lang": ["ru", "en", "pl"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "folder",
+                "required": false
+            }
+        }
+    }
+}

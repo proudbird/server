@@ -1,0 +1,51 @@
+{
+    "99d43988-5840-4b47-acf0-c16bb1b0ee75": {
+        "name": "Countries",
+        "cube": "Common",
+        "class": "Catalogs",
+        "tableId": "CT_j4FizWS7",
+        "title": "Countries",
+        "description": "Countries",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 0,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 25,
+        "nameLang": ["ru", "pl"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "Alpha2": {
+                "fieldId": "FL_lZiddeGD",
+                "title": "Alpha 2",
+                "description": "Alpha 2 code",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 2,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Alpha3": {
+                "fieldId": "FL_H9LpuhIT",
+                "title": "Alpha 3",
+                "description": "Alpha 3 code",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 3,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

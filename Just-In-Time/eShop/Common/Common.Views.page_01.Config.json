@@ -1,0 +1,67 @@
+{
+  "view": "View",
+  "name": "page_01",
+  "title": "Home",
+  "css": "page_01",
+  "rows": [{},
+    {
+      "css": "cover",
+      "cols": [{
+          "maxWidth": 300
+        },
+        {
+          "minWidth": 400,
+          "maxWidth": 600,
+          "rows": [{
+              "view": "template",
+              "css": "cover_title",
+              "autoheight": true,
+              "borderless": true,
+              "template": "<h1>Linen Home Textile<h2>"
+            },
+            {
+              "view": "template",
+              "css": "cover_title",
+              "autoheight": true,
+              "borderless": true,
+              "template": "<h3>Nature is not ideal. Well, flax fibers too.<h3>"
+            },
+            {
+              "height": 30
+            },
+            {
+              "cols": [{
+                  "view": "Button",
+                  "name": "btn_01_1",
+                  "width": 130,
+                  "css": "d-button",
+                  "value": "1",
+                  "label": "learn more",
+                  "events": {
+                    "onItemClick": "moveToView"
+                  }
+                },
+                {
+                  "view": "Button",
+                  "name": "btn_01_2",
+                  "width": 130,
+                  "css": "d-button",
+                  "value": "6",
+                  "label": "shop now",
+                  "events": {
+                    "onItemClick": "moveToView"
+                  }
+                }
+              ]
+            },
+            {
+              "height": 30
+            }
+          ]
+        },
+        {}
+      ]
+    },
+    {}
+  ]
+}

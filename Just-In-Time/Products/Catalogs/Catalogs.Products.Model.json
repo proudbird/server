@@ -1,0 +1,230 @@
+{
+    "ba76ce2b-25ac-4fa3-b4bf-75b4e25b812f": {
+        "name": "Products",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_PW7U1FSF",
+        "title": "Products",
+        "description": "Products",
+        "multilevel": true,
+        "multilevelType": "folders",
+        "numberOfLevels": 3,
+        "codeLenght": 5,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 255,
+        "nameLang": ["ru", "en", "pl", "de"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "FullName": {
+                "fieldId": "FL_jf2Yzyuh",
+                "title": "Full name",
+                "description": "Printed full name",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 255,
+                    "lang": ["ru", "en", "pl", "de"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "SKU": {
+                "fieldId": "FL_3TxGpaiw",
+                "title": "SKU",
+                "description": "Stock keeping unit",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 25,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Description": {
+                "fieldId": "FL_PXw0HOxh",
+                "title": "Description",
+                "description": "Description",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 0,
+                    "lang": ["ru", "en", "pl", "de"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "CareSymbols": {
+                "fieldId": "FL_PAozGp0v",
+                "title": "Care symbols",
+                "description": "Textile care symbols",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 10,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "WeightNetto": {
+                "fieldId": "FL_WXY0DEhC",
+                "title": "Weight netto, kg",
+                "description": "Weight netto kilograms",
+                "type": {
+                    "dataType": "NUMBER",
+                    "length": 10,
+                    "fractionalLength": 3
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "WeightBrutto": {
+                "fieldId": "FL_Lh2EmFi3",
+                "title": "Weight brutto, kg",
+                "description": "Weight brutto kilograms",
+                "type": {
+                    "dataType": "NUMBER",
+                    "length": 10,
+                    "fractionalLength": 3
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "HasVariants": {
+                "fieldId": "FL_kUZyOekC",
+                "title": "Has variants",
+                "description": "Product has variants",
+                "type": {
+                    "dataType": "BOOLEAN"
+                },
+                "defaultValue": false,
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "ProductSort": {
+                "fieldId": "FL_Q0WrvgB0",
+                "title": "Product sort",
+                "description": "Product sort",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "606b0a6f-bf85-4f56-92f0-5640c936fc93"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Producer": {
+                "fieldId": "FL_4zy9tLa8",
+                "title": "Producer",
+                "description": "Producers of the product",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "2a33e1f1-6739-40fc-ad74-5fecbf8c55bd"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Brand": {
+                "fieldId": "FL_Cw6VZOak",
+                "title": "Brand",
+                "description": "Brand of the product",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "f140f815-eae6-4053-b995-be1169d68850"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Unit": {
+                "fieldId": "FL_36MfGfNL",
+                "title": "Unit",
+                "description": "Unit",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "035df78a-4f3b-4010-a19d-9d6487253973"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Variation": {
+                "fieldId": "FL_UbTaYg3z",
+                "title": "Variation",
+                "description": "Variation of the product",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "68730508-232d-45cb-986f-70c4ecd03ed6"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }, 
+        "collections": {
+            "8c7e37d7-7d7a-447c-9902-905d601dbf16": {
+                "name": "Attributes",
+                "class": "Collection",
+                "tableId": "CL_sNr99UfY",
+                "presentation": "Attribute",
+                "attributes": {
+                    "Attribute": {
+                        "fieldId": "FL_N332sive",
+                        "title": "Attribute",
+                        "description": "Attribute",
+                        "type": {
+                            "dataType": "FK",
+                            "reference": {
+                                "cube": "this",
+                                "class": "Catalogs",
+                                "modelId": "fd006eed-37d8-4950-9645-6925d00a04ae"
+                            }
+                        },
+                        "defaultValue": "",
+                        "toolTip": "",
+                        "required": true
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "view": "View",
+  "name": "page_07",
+  "title": "Shop",
+  "css": "cover",
+  "rows": [{},
+    {
+      "css": "cover_title",
+      "cols": [
+          {
+            "rows": [
+              {},
+              {
+                "view": "Button",
+                "name": "btnShopBedding",
+                "width": 300,
+                "label": "choose mine",
+                "value": 1,
+                "events": {
+                  "onItemClick": "btnShop_onClick"
+                }
+              },
+              {}
+            ]
+          }
+      ]
+    },
+    {}
+  ]
+}

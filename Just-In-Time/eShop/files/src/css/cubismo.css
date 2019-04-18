@@ -1,0 +1,242 @@
+/* based on MaterialDesignIcons.com */
+@font-face {
+    font-family: "Material Design Icons";
+    src: url('/fonts/materialdesignicons-webfont.eot');
+    src: url('/fonts/materialdesignicons-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/materialdesignicons-webfont.woff2') format('woff2'), url('/fonts/materialdesignicons-webfont.woff') format('woff'), url('/fonts/materialdesignicons-webfont.ttf') format('truetype'), url('/fonts/materialdesignicons-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.mdi {
+    font-family: "Material Design Icons";
+}
+
+  /* icons collection common for above fonts*/
+.mdi-email:before {
+    font-family: "Material Design Icons";
+    content: "\F5F0";
+}
+.mdi-account-multiple:before {
+    font-family: "Material Design Icons";
+    content: "\f00e";
+}
+.mdi-menu:before {
+    font-family: "Material Design Icons";
+    content: "\f35c";
+}
+.mdi-account-search:before {
+    font-family: "Material Design Icons";
+    content: "\f016";
+}
+.mdi-email-plus-outline:before {
+    font-family: "Material Design Icons";
+    content: "\f9eb";
+}
+
+.jit-switch-button-off > .webix_el_box {
+    background-color:#A4B4BF;
+    border-radius: 5px;
+    padding: 1px;
+}
+.jit-switch-button-on > .webix_el_box.webix_pressed {
+    background-color:#3498DB;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.jit-switch-button-off > .webix_el_box > .webixtype_base {
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: #A4B4BF;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+}
+
+.jit-switch-button-on > .webix_el_box.webix_pressed > .webixtype_base {
+    font-size:14px;
+    color:#3498DB;
+    background-color:white;
+    border:none;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 27px;
+}
+
+.webix_inp_counter_value {
+    height: 100%;
+}
+
+.webix_tree_file{
+    background-image:none;
+}
+
+.webix_tree_none{
+    width: 10px;
+}
+
+.webix_tree_application,
+.webix_tree_module
+{
+    width: 22px;
+    padding-right: 3px;
+    display:inline-block;
+    font-family:FontAwesome;
+    font-style:normal;
+    font-size:17px;
+    color: #666;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    transform:translate(0,0)
+}
+
+.webix_tree_application:before{content:"\f1b3"}
+.webix_tree_module:before{content:"\f1b2"}
+
+/*.webix_item_tab .webix_icon{width:auto; padding-right: 7px; font-size:14px}
+/* .webix_tab_filler{border-bottom: 0px} */
+/*.webix_item_tab{
+    border:1px solid #a4bed4; 
+    border-bottom: 0px; 
+    /*border-left: 0px; */
+    /*text-align:left;
+    padding-left: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+/*}
+.webix_tab_filler:first-child{border-left:0px}*/
+
+
+.jit-email_list {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.email-from-to {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.email-topic {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email-attachment {
+    width: 80px;
+    margin-top: 5px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.email-attachment-name {
+    width: 80px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nicEdit-selected {
+    overflow: auto !important;
+}
+
+.webix_template, 
+.webix_list_item, 
+.webix_item_tab, 
+.webix_dataview_item,
+.webix_cell {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.pointer_arrow {
+    cursor: default;
+}
+
+.window {
+    background-color:white;
+    /*box-shadow:0 1px 1px #fff inset*/
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+
+/* .webix_view {
+    background-color:transparent;
+} */
+
+.window_bar {
+    -webkit-app-region: drag;
+    border: 0px;
+}
+
+/* .webix_icon_btn {
+    font-size:12px;
+    vertical-align: middle
+} */
+
+.cub_dangerous_text_color {
+  color: darkred;
+}
+
+.cub_comment_text_color {
+  color:dimgray;
+}
+
+.JSONViewer {
+    position: absolute;
+    left:0; top:0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.renderjson {
+    /* padding: 15px 15px 15px 15px;
+    position: absolute;
+    width: 100%; */
+}
+
+.webix_item_tab:focus {
+    /* outline: 0; */
+}
+.webix_item_tab:active {
+    /* outline: 0; */
+}
+
+.cubismo_search_input {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* .webix_view::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.webix_view::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.webix_view::-webkit-scrollbar-thumb
+{
+	background-color: rgb(165, 165, 165);
+} */
+
+.webix_list_item {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

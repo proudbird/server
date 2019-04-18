@@ -1,0 +1,71 @@
+{
+    "7f284527-6d57-4ce6-8573-a047b3bcc575": {
+        "name": "Partners",
+        "cube": "Enterprise",
+        "class": "Catalogs",
+        "tableId": "CT_HwSMZV29",
+        "title": "Partners",
+        "description": "Business partners (suppliers, conrtactors, etc.)",
+        "multilevel": "true",
+        "multilevelType": "folders",
+        "numberOfLevels": 2,
+        "codeLenght": 5,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 50,
+        "nameLang": ["ru", "pl"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "LegalName": {
+                "fieldId": "FL_XEoXe4Ba",
+                "title": "Legal name",
+                "description": "Registred name of the partner",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 150,
+                    "lang": ["ru", "pl"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "LegalAddress": {
+                "fieldId": "FL_afKz7gj6",
+                "title": "Legal address",
+                "description": "Legal address of the registration",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "24a17273-e423-4c8e-8490-68bf2eb05154"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "PostalAddress": {
+                "fieldId": "FL_Jjas2XlB",
+                "title": "Postal address",
+                "description": "Postal address for correspondence",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "this",
+                        "class": "Catalogs",
+                        "modelId": "24a17273-e423-4c8e-8490-68bf2eb05154"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

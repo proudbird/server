@@ -1,0 +1,51 @@
+{
+    "035df78a-4f3b-4010-a19d-9d6487253973": {
+        "name": "Units",
+        "cube": "Common",
+        "class": "Catalogs",
+        "tableId": "CT_laUZhmFj",
+        "title": "Units",
+        "description": "Units",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 0,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 25,
+        "nameLang": ["ru", "pl", "en"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "Symbol": {
+                "fieldId": "FL_kO1mDjyg",
+                "title": "Symbol",
+                "description": "Symbol",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 10,
+                    "lang": ["ru", "pl", "en"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "ISOCode": {
+                "fieldId": "FL_Q3NrYNqw",
+                "title": "ISO Code",
+                "description": "ISO Code",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 2,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

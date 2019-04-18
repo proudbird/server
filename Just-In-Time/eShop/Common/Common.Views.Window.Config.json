@@ -1,0 +1,65 @@
+{
+  "name": "MainWindow",
+  "view": "MainWindow",
+  "main": true,
+  "css": "window",
+  "events": {
+    "onLoad": "onLoad"
+  },
+  "rows": [
+    {
+      "name": "MainRow",
+      "css": "borderless",
+      "cols":  [
+        {
+          "view": "Group",
+          "name": "Sidebar",
+          "css": "sidebar",
+          "adaptive": {
+            "width" : {
+              "1200": 300,
+              "800": 0
+            }
+          },
+          "rows": [
+            {
+              "template": "<img id='logo' src='src/img/logo.png'>",
+              "height": 150,
+              "css": "borderless"
+            },
+            {
+              "view": "List",
+              "name": "Menu",
+              "select": true,
+              "scroll": false,
+              "css": "borderless",
+              "type": {
+                "css": "sidebar_menu_item"
+              },
+              "events": {
+                "onSelectChange": "Menu_onSelectChange"
+              }
+            }
+          ]        
+        },
+        {
+          "name": "ViewContainer",
+          "view": "Carousel",
+          "scrollSpeed": "1000ms",
+          "css": "borderless",
+          "navigation": {
+              "items": false,
+              "buttons ": false,
+              "type": "none"
+          },
+          "rows": [
+      
+          ],
+          "events": {
+            "onShow": "ViewContainer_onShow"
+          }
+        }
+      ]
+    }
+  ]
+}

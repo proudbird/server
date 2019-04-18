@@ -1,0 +1,22 @@
+{
+    "f140f815-eae6-4053-b995-be1169d68850": {
+        "name": "Brands",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_LGQYmRtR",
+        "title": "Brands",
+        "description": "Brands",
+        "multilevel": false,
+        "multilevelType": "folders",
+        "numberOfLevels": 1,
+        "codeLenght": 10,
+        "codeType": "STRING",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 50,
+        "nameLang": [],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {}
+    }
+}

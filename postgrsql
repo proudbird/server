@@ -1,0 +1,64 @@
+sudo su -
+service postgresql start
+
+sudo -u postgres psql
+
+\c just_in_time
+
+SELECT * FROM "CT_Mj1iI6tu";
+SELECT * FROM "CT_HwSMZV29";
+SELECT * FROM "CT_fp9wd0Rr";
+SELECT * FROM "CL_sNr9JUfY";
+SELECT * FROM "CT_X6F4nifo";
+
+DROP DATABASE "just_in_time"; 
+CREATE DATABASE "just_in_time"; 
+
+\d CT_X6F4nifo
+
+"SELECT "Enterprise.Catalogs.Partners"."id", "Enterprise.Catalogs.Partners"."dropped", "Enterprise.Catalogs.Partners"."isFolder", 
+"Enterprise.Catalogs.Partners"."level", "Enterprise.Catalogs.Partners"."Code", "Enterprise.Catalogs.Partners"."Name_ru", 
+"Enterprise.Catalogs.Partners"."Name_pl", "Enterprise.Catalogs.Partners"."FL_XEoXe4Ba_ru" AS "LegalName_ru", "Enterprise.Catalogs.Partners"."FL_XEoXe4Ba_pl" 
+AS "LegalName_pl", "Enterprise.Catalogs.Partners"."createdAt", "Enterprise.Catalogs.Partners"."updatedAt", "Enterprise.Catalogs.Partners"."deletedAt", 
+"Enterprise.Catalogs.Partners"."FL_afKz7gj6", "Enterprise.Catalogs.Partners"."FL_Jjas2XlB", "Enterprise.Catalogs.Partners"."parentId", "LegalAddress"."id" 
+AS "LegalAddress.id", "LegalAddress"."dropped" AS "LegalAddress.dropped", "LegalAddress"."Code" AS "LegalAddress.Code", "LegalAddress"."Name_ru" AS "LegalAddress.Name_ru", 
+"LegalAddress"."Name_pl" AS "LegalAddress.Name_pl", "LegalAddress"."FL_T6G0VxZd_ru" AS "LegalAddress.Address1_ru", "LegalAddress"."FL_T6G0VxZd_pl" AS "LegalAddress.Address1_pl", 
+"LegalAddress"."FL_Fo0k0TZz_ru" AS "LegalAddress.Address2_ru", "LegalAddress"."FL_Fo0k0TZz_pl" AS "LegalAddress.Address2_pl", "LegalAddress"."FL_5hmYN5nE" 
+AS "LegalAddress.PostalCode", "LegalAddress"."createdAt" AS "LegalAddress.createdAt", "LegalAddress"."updatedAt" AS "LegalAddress.updatedAt", "LegalAddress"."deletedAt" 
+AS "LegalAddress.deletedAt", "LegalAddress"."ownerId" AS "LegalAddress.ownerId", "PostalAddress"."id" AS "PostalAddress.id", "PostalAddress"."dropped" AS "PostalAddress.dropped", 
+"PostalAddress"."Code" AS "PostalAddress.Code", "PostalAddress"."Name_ru" AS "PostalAddress.Name_ru", "PostalAddress"."Name_pl" AS "PostalAddress.Name_pl", "PostalAddress"."FL_T6G0VxZd_ru" 
+AS "PostalAddress.Address1_ru", "PostalAddress"."FL_T6G0VxZd_pl" AS "PostalAddress.Address1_pl", "PostalAddress"."FL_Fo0k0TZz_ru" AS "PostalAddress.Address2_ru", 
+"PostalAddress"."FL_Fo0k0TZz_pl" AS "PostalAddress.Address2_pl", "PostalAddress"."FL_5hmYN5nE" AS "PostalAddress.PostalCode", "PostalAddress"."createdAt" AS "PostalAddress.createdAt", 
+"PostalAddress"."updatedAt" AS "PostalAddress.updatedAt", "PostalAddress"."deletedAt" AS "PostalAddress.deletedAt", "PostalAddress"."ownerId" AS "PostalAddress.ownerId", 
+"Parent"."id" AS "Parent.id", "Parent"."dropped" AS "Parent.dropped", "Parent"."isFolder" AS "Parent.isFolder", "Parent"."level" AS "Parent.level", "Parent"."Code" AS "Parent.Code", 
+"Parent"."Name_ru" AS "Parent.Name_ru", "Parent"."Name_pl" AS "Parent.Name_pl", "Parent"."FL_XEoXe4Ba_ru" AS "Parent.LegalName_ru", "Parent"."FL_XEoXe4Ba_pl" AS "Parent.LegalName_pl", 
+"Parent"."createdAt" AS "Parent.createdAt", "Parent"."updatedAt" AS "Parent.updatedAt", "Parent"."deletedAt" AS "Parent.deletedAt", "Parent"."FL_afKz7gj6" AS "Parent.FL_afKz7gj6", 
+"Parent"."FL_Jjas2XlB" AS "Parent.FL_Jjas2XlB", "Parent"."parentId" AS "Parent.parentId", "Parent->Parent"."id" AS "Parent.Parent.id", "Parent->Parent"."dropped" AS "Parent.Parent.dropped", 
+"Parent->Parent"."isFolder" AS "Parent.Parent.isFolder", "Parent->Parent"."level" AS "Parent.Parent.level", "Parent->Parent"."Code" AS "Parent.Parent.Code", "Parent->Parent"."Name_ru" AS 
+"Parent.Parent.Name_ru", "Parent->Parent"."Name_pl" AS "Parent.Parent.Name_pl", "Parent->Parent"."FL_XEoXe4Ba_ru" AS "Parent.Parent.LegalName_ru", "Parent->Parent"."FL_XEoXe4Ba_pl" AS 
+"Parent.Parent.LegalName_pl", "Parent->Parent"."createdAt" AS "Parent.Parent.createdAt", "Parent->Parent"."updatedAt" AS "Parent.Parent.updatedAt", "Parent->Parent"."deletedAt" AS 
+"Parent.Parent.deletedAt", "Parent->Parent"."FL_afKz7gj6" AS "Parent.Parent.FL_afKz7gj6", "Parent->Parent"."FL_Jjas2XlB" AS "Parent.Parent.FL_Jjas2XlB", "Parent->Parent"."parentId" AS 
+"Parent.Parent.parentId" FROM "CT_HwSMZV29" AS "Enterprise.Catalogs.Partners" 
+
+LEFT OUTER JOIN "CT_Mj1iI6tu" AS "LegalAddress" ON "Enterprise.Catalogs.Partners"."FL_afKz7gj6" = "LegalAddress"."id" AND ("LegalAddress"."deletedAt" > '2019-02-15 15:46:40.750 +00:00' OR "LegalAddress"."deletedAt" IS NULL) 
+LEFT OUTER JOIN "CT_Mj1iI6tu" AS "PostalAddress" ON "Enterprise.Catalogs.Partners"."FL_Jjas2XlB" = "PostalAddress"."id" AND ("PostalAddress"."deletedAt" > '2019-02-15 15:46:40.750 +00:00' OR "PostalAddress"."deletedAt" IS NULL) 
+LEFT OUTER JOIN "CT_HwSMZV29" AS "Parent" ON "Enterprise.Catalogs.Partners"."parentId" = "Parent"."id" AND ("Parent"."deletedAt" > '2019-02-15 15:46:40.750 +00:00' OR "Parent"."deletedAt" IS NULL) LEFT OUTER JOIN "CT_HwSMZV29" AS "Parent->Parent" ON "Parent"."parentId" = "Parent->Parent"."id" AND ("Parent->Parent"."deletedAt" > '2019-02-15 15:46:40.750 +00:00' OR "Parent->Parent"."deletedAt" IS NULL) WHERE "Enterprise.Catalogs.Partners"."id" IN ('66a165b0-ba94-4727-91d6-cb921af0d0b5')"
+
+
+parentId:null
+PostalAddress.Address1_pl:null
+PostalAddress.Address1_ru:null
+PostalAddress.Address2_pl:null
+PostalAddress.Address2_ru:null
+PostalAddress.Code:3
+PostalAddress.createdAt:Tue Feb 12 2019 13:05:33 GMT+0100 (GMT+01:00) {}
+PostalAddress.deletedAt:null
+PostalAddress.dropped:false
+PostalAddress.id:"727eae4d-a6c9-479a-8543-369f1e2ced1c"
+PostalAddress.Name_pl:null
+PostalAddress.Name_ru:"Почтовый"
+PostalAddress.ownerId:null
+PostalAddress.PostalCode:null
+PostalAddress.updatedAt:Thu Feb 14 2019 14:33:18 GMT+0100 (GMT+01:00) {}
+updatedAt:Fri Feb 15 2019 16:30:41 GMT+0100 (GMT+01:00) {}
+__pr

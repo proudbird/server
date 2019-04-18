@@ -1,0 +1,75 @@
+{
+  "view": "View",
+  "name": "CatalogItem",
+  "header": "Variation",
+  "rows": [{
+      "view": "Toolbar",
+      "name": "Toolbar",
+      "owner": "CatalogItem",
+      "composition": "default",
+      "elements": []
+    },
+    {
+      "view": "layout",
+      "name": "Layout",
+      "type": "form",
+      "rows": [{
+        "rows": [
+          {
+            "cols": [{
+              "view": "Text",
+              "name": "Name",
+              "label": "Name",
+              "dataLink": "item.Name"
+            },{
+              "view": "Text",
+              "name": "Code",
+              "label": "Code",
+              "dataLink": "item.Code"
+            }]
+          },
+          { 
+            "view": "Toolbar",
+            "name": "Toolbar",
+            "owner": "Combinations", 
+            "composition": "default", 
+            "elements": []
+          },
+          {
+            "view": "Datatable",
+            "name": "Combinations",
+            "label": "Combinations",
+            "dataLink": "item.Combinations",
+            "editable": true,
+            "editaction": "dblclick",
+            "select": true,
+            "multiselect": true,
+            "scroll": "x",
+            "header": true,
+            "events": {
+              "onLookup": "Combinations_onLookup"
+            },
+            "columns": [{
+                "id": "order",
+                "header": "Lp.",
+                "width": 30
+              },
+              {
+                "id": "Attribute",
+                "header": "Attribute",
+                "editor": "lookup",
+                "fillspace": true
+              },
+              {
+                "id": "Value",
+                "header": "Value",
+                "editor": "lookup",
+                "fillspace": true
+              }
+            ]
+          }
+        ]
+      }]
+    }
+  ]
+}

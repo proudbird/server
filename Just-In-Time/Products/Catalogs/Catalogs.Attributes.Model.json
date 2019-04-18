@@ -1,0 +1,69 @@
+{
+    "fd006eed-37d8-4950-9645-6925d00a04ae": {
+        "name": "Attributes",
+        "cube": "Products",
+        "class": "Catalogs",
+        "tableId": "CT_X6F4nifo",
+        "title": "Products attributes",
+        "description": "Products attributes",
+        "multilevel": true,
+        "multilevelType": "folders",
+        "numberOfLevels": 2,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 50,
+        "nameLang": ["ru", "pl"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "IsColor": {
+                "fieldId": "FL_NSZ3sive",
+                "title": "is color",
+                "description": "Attribute is color",
+                "type": {
+                    "dataType": "BOOLEAN"
+                },
+                "defaultValue": false,
+                "toolTip": "",
+                "required": false
+            }
+        },
+        "collections": {
+            "8c7e37d7-7d7a-447c-8802-905d601dbf16": {
+                "name": "Values",
+                "class": "Collection",
+                "tableId": "CL_sNr9JUfY",
+                "presentation": "Value",
+                "attributes": {
+                    "Value": {
+                        "fieldId": "FL_NSz2sive",
+                        "title": "Value",
+                        "description": "Attribute value",
+                        "type": {
+                            "dataType": "STRING",
+                            "length": 150,
+                            "lang": ["ru", "pl"]
+                        },
+                        "defaultValue": "",
+                        "toolTip": "",
+                        "required": true
+                    },
+                    "Path": {
+                        "fieldId": "FL_tSz2Frve",
+                        "title": "Path to the swatch",
+                        "description": "Path to the file with swatch (if is)",
+                        "type": {
+                            "dataType": "STRING",
+                            "length": 150
+                        },
+                        "defaultValue": "",
+                        "toolTip": "",
+                        "required": true
+                    }
+                }
+            }
+        }
+    }
+}

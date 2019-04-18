@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "cubismo server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proudbird/server.git"
+  },
+  "author": "Max Orlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proudbird/server/issues"
+  },
+  "homepage": "https://github.com/proudbird/server#readme",
+  "dependencies": {
+    "cubismo": "^0.3.0"
+  }
+}
