@@ -20,7 +20,7 @@ Cube.OnStart = function() {
   //     res.send(view.replace(/AppName/g, Application.ID));
   //   } else {
   //     var view = Cube.Form("Window").Show();
-  //     var viewConfig = Tools.ObjectToJSON(view);
+  //     var viewConfig = _.ObjectToJSON(view);
   //     res.send(viewConfig);
   //   }
   // });

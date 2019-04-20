@@ -4,7 +4,8 @@
   "description": "cubismo server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c ./node_modules/cubismo/rollup.config.js",
+    "watch": "rollup -c ./node_modules/cubismo/rollup.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,17 @@
   },
   "homepage": "https://github.com/proudbird/server#readme",
   "dependencies": {
-    "cubismo": "^0.3.0"
+    "cubismo": "^0.3.0",
+    "webix": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-cli": "^6.26.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^4.2.3"
   }
 }

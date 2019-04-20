@@ -1,4 +1,4 @@
-/* globals Tools Application View */
+/* globals _ Application View */
 const path = require('path');
 
 View.onInit = function (callback) {
@@ -11,11 +11,11 @@ View.onLoad = async function (params) {
 
   const sidebar = [{
       parent: {
-        id: Tools.SID(),
+        id: _.SID(),
         value: "Common"
       },
       items: [{
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Countries",
           command: "openForm",
           cube: "Common",
@@ -23,7 +23,7 @@ View.onLoad = async function (params) {
           type: "Countries"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Units",
           command: "openForm",
           cube: "Common",
@@ -34,11 +34,11 @@ View.onLoad = async function (params) {
     },
     {
       parent: {
-        id: Tools.SID(),
+        id: _.SID(),
         value: "Enterprise"
       },
       items: [{
-        id: Tools.SID(),
+        id: _.SID(),
         value: "Partners",
         command: "openForm",
         cube: "Enterprise",
@@ -48,11 +48,11 @@ View.onLoad = async function (params) {
     },
     {
       parent: {
-        id: Tools.SID(),
+        id: _.SID(),
         value: "Products"
       },
       items: [{
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Products",
           command: "openForm",
           cube: "Products",
@@ -60,7 +60,7 @@ View.onLoad = async function (params) {
           type: "Products"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Brands",
           command: "openForm",
           cube: "Products",
@@ -68,7 +68,7 @@ View.onLoad = async function (params) {
           type: "Brands"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Producers",
           command: "openForm",
           cube: "Products",
@@ -76,7 +76,7 @@ View.onLoad = async function (params) {
           type: "Producers"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Attributes",
           command: "openForm",
           cube: "Products",
@@ -84,7 +84,7 @@ View.onLoad = async function (params) {
           type: "Attributes"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "Variations",
           command: "openForm",
           cube: "Products",
@@ -92,7 +92,7 @@ View.onLoad = async function (params) {
           type: "Variations"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "HSCodes",
           command: "openForm",
           cube: "Products",
@@ -100,7 +100,7 @@ View.onLoad = async function (params) {
           type: "HSCodes"
         },
         {
-          id: Tools.SID(),
+          id: _.SID(),
           value: "ProductSorts",
           command: "openForm",
           cube: "Products",

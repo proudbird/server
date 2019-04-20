@@ -1,4 +1,4 @@
-/* globals __ROOT Tools Platform Application Form */
+/* globals __ROOT _ Platform Application Form */
 
 View.onLoad = async function(Params) {
   console.log("Main view is loaded");

@@ -1,0 +1,9 @@
+{
+  "view": "View",
+  "name": "Playground",
+  "header": "Playground",
+  "rows": [{
+    "view": "video",
+    "userMedia": true
+  }]
+}

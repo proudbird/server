@@ -1,5 +1,5 @@
 /* globals Tools Application ID ContainerID webix*/
-var UploaderListID = Tools.SID();
+var UploaderListID = _.SID();
 module.exports.Init = function (Master) {
   return {
     view: "Form",
@@ -9,13 +9,13 @@ module.exports.Init = function (Master) {
     header: 'Variations',
     rows: [
       {
-        id: Tools.SID(),
+        id: _.SID(),
         formID: ID,
         view: "Menu",
         name: "Menu",
         data: [
-          { id: Tools.SID(), formID: ID, value: 'New', onMenuItemClickCommand: 'New' },
-          { id: Tools.SID(), formID: ID, value: 'Delete', onMenuItemClickCommand: 'Delete' }
+          { id: _.SID(), formID: ID, value: 'New', onMenuItemClickCommand: 'New' },
+          { id: _.SID(), formID: ID, value: 'Delete', onMenuItemClickCommand: 'Delete' }
         ],
         type: { subsign: true }
       },
@@ -23,7 +23,7 @@ module.exports.Init = function (Master) {
         cols: [
           {
             view: "Treetable",
-            id: Tools.SID(),
+            id: _.SID(),
             formID: ID,
             name: "List",
             treeType: true,

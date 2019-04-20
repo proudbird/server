@@ -33,7 +33,7 @@ module.exports.Init = function (Master) {
       },
       {
         view: "Button",
-        id: Tools.SID(),
+        id: _.SID(),
         formID: ID,
         name: "btnClose",
         label: "finish",

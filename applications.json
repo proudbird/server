@@ -2,5 +2,9 @@
     "Just-In-Time": 
       {
       "directory": ".\/Just-In-Time"
+      },
+    "Cards": 
+      {
+      "directory": ".\/Cards"
       }
   }

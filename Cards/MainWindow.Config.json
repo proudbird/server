@@ -1,0 +1,45 @@
+{
+  "name": "MainWindow",
+  "view": "MainWindow",
+  "main": true,
+  "css":  "window",
+  "events": {
+    "onLoad": "onLoad"
+  },
+  "rows": [
+    {
+      "name": "Header",
+      "view": "template",
+      "template": "<h3>Cards</h3>",
+      "height": 60
+    },
+    {
+      "cols": [
+        {
+          "name": "Sidebar",
+          "view": "sidebar",
+          "width": 150,
+          "events": {
+            "onItemClick": "Sidebar_onItemClick"
+          },
+          "data": []
+        },
+        {
+          "name": "ViewContainer",
+          "view": "Viewbar",
+          "tabbar": {
+            "tabOffset": 0
+          },
+          "multiview": {
+            "animate": false
+          },
+          "cells": [
+            {
+              "id": "dummy", "header": "  "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

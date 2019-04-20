@@ -22,7 +22,7 @@ module.exports.Init = function (Master) {
         rows: [
           {
             view: "label",
-            id: Tools.SID(), 
+            id: _.SID(), 
             formID: ID,
             name: "lblBedspreads",
             label: "Bedspreds",

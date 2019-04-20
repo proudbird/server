@@ -1,8 +1,8 @@
-/* globals Tools Log Module*/
+/* globals _ Log Module*/
 const _async = require("async");
 
 Module.onStart = async function() {
-    Log.debug("Cube " + Module.name + " is loaded.");
+    Log.debug("Cube " + Module.name + " is loaded");
 
     let prefix;
     let count = 0;

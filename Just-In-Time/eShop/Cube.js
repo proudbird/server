@@ -7,7 +7,7 @@ const path  = require("path");
 
 Cube.onStart = function() {
 
-  const clientId = Tools.GUID();
+  const clientId = _.GUID();
   Application.subscribeOnClient(clientId, client => {
     Cube.client = client;
     client.emit("start");
@@ -25,12 +25,12 @@ Cube.onStart = function() {
 
   const files = path.join(Cube.dirname, 'files');
   const src = path.join(files, "src");
-  const system = path.join(__ROOT, "client");
+  const system = path.join(Application.dirname, "client");
 
   server.testName = "webSite";
   server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
     var addr = server.address();
-    console.log("E-Shop server listening at", addr.address + ":" + addr.port);
+    Log.info(`E-Shop server listening at ${addr.address}:${addr.port}`);
   });
 
   router.get('/', function(req, res, next) {

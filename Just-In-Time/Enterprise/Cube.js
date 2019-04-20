@@ -1,4 +1,4 @@
-/* globals Tools Log Module*/
+/* globals _ Log Module*/
 Module.onStart = function() {
-  Log.debug("Cube " + Module.name + " is loaded.");
+  Log.debug("Cube " + Module.name + " is loaded");
 }

@@ -1,5 +1,5 @@
-/* globals Tools Application ID ContainerID webix*/
-var UploaderListID = Tools.SID();
+/* globals _ Application ID ContainerID webix*/
+var UploaderListID = _.SID();
 module.exports.Init = function (Instance) {
   return {
     view: "Form",
@@ -9,18 +9,18 @@ module.exports.Init = function (Instance) {
     header: 'Agreement',
     rows: [
       {
-        id: Tools.SID(),
+        id: _.SID(),
         formID: ID,
         view: "Menu",
         name: "Menu",
         data: [
-          { id: Tools.SID(), formID: ID, value: 'OK', onMenuItemClickCommand: 'Ok' }
+          { id: _.SID(), formID: ID, value: 'OK', onMenuItemClickCommand: 'Ok' }
         ],
         type: { subsign: true }
       },
       {
         view: 'layout',
-        id: Tools.SID(),
+        id: _.SID(),
         formID: ID,
         name: 'Layout',
         type: 'form',
@@ -28,7 +28,7 @@ module.exports.Init = function (Instance) {
             rows: [
               {
                 view: 'Text',
-                id: Tools.SID(),
+                id: _.SID(),
                 formID: ID,
                 name: 'Name',
                 label: 'Name',
@@ -37,7 +37,7 @@ module.exports.Init = function (Instance) {
               },
               {
                 view: 'Text',
-                id: Tools.SID(),
+                id: _.SID(),
                 formID: ID,
                 name: 'Code',
                 label: 'Code',
@@ -46,7 +46,7 @@ module.exports.Init = function (Instance) {
               },
               {
                 view: 'Text',
-                id: Tools.SID(),
+                id: _.SID(),
                 formID: ID,
                 name: 'Number',
                 label: 'Number',
@@ -55,7 +55,7 @@ module.exports.Init = function (Instance) {
               },
               {
                 view: 'datepicker',
-                id: Tools.SID(),
+                id: _.SID(),
                 formID: ID,
                 name: 'Date',
                 label: 'Date',

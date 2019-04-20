@@ -1,5 +1,5 @@
 /* globals Tools Application ID ContainerID webix*/
-var UploaderListID = Tools.SID();
+var UploaderListID = _.SID();
 module.exports.Init = function (Instance) {
   return { 
     containerID: ContainerID,
@@ -14,18 +14,18 @@ module.exports.Init = function (Instance) {
         maxWidth: 1000,
         rows: [
           {
-            id: Tools.SID(),
+            id: _.SID(),
             formID: ID,
             view: "Menu",
             name: "Menu",
             data: [
-              { id: Tools.SID(), formID: ID, value: 'OK', onMenuItemClickCommand: 'Ok' }
+              { id: _.SID(), formID: ID, value: 'OK', onMenuItemClickCommand: 'Ok' }
             ],
             type: { subsign: true }
           },
           {
             view: 'layout',
-            id: Tools.SID(),
+            id: _.SID(),
             formID: ID,
             name: 'Layout',
             type: 'form',
@@ -33,7 +33,7 @@ module.exports.Init = function (Instance) {
                 rows: [
                   {
                     view: 'lookup',
-                    id: Tools.SID(),
+                    id: _.SID(),
                     formID: ID,
                     name: 'Owner',
                     label: 'Owner',
@@ -45,7 +45,7 @@ module.exports.Init = function (Instance) {
                     cols: [
                       {
                         view: 'Text',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'Name',
                         label: 'Name',
@@ -54,7 +54,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'Text',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'SKU',
                         label: 'SKU',
@@ -63,7 +63,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'Text',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'Code',
                         label: 'Code',
@@ -74,7 +74,7 @@ module.exports.Init = function (Instance) {
                   },
                   {
                     view: 'Text',
-                    id: Tools.SID(),
+                    id: _.SID(),
                     formID: ID,
                     name: 'FullName',
                     label: 'Full name',
@@ -83,7 +83,7 @@ module.exports.Init = function (Instance) {
                   },
                   {
                     view: 'Text',
-                    id: Tools.SID(),
+                    id: _.SID(),
                     formID: ID,
                     name: 'Description',
                     label: 'Description',
@@ -92,7 +92,7 @@ module.exports.Init = function (Instance) {
                   },
                   {
                     view: 'lookup',
-                    id: Tools.SID(),
+                    id: _.SID(),
                     formID: ID,
                     name: 'Parent',
                     label: 'Category',
@@ -104,7 +104,7 @@ module.exports.Init = function (Instance) {
                     cols: [
                       {
                         view: 'lookup',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'ProductSort',
                         label: 'Product sort',
@@ -115,7 +115,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'lookup',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'ProductType',
                         label: 'Product type',
@@ -130,7 +130,7 @@ module.exports.Init = function (Instance) {
                     cols: [
                       {
                         view: 'lookup',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'Producer',
                         label: 'Producer',
@@ -140,7 +140,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'lookup',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'Brand',
                         label: 'Brand',
@@ -154,7 +154,7 @@ module.exports.Init = function (Instance) {
                     cols: [
                       {
                         view: 'lookup',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'Unit',
                         label: 'Unit',
@@ -165,7 +165,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'Text',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'WeightNetto',
                         label: 'Weight netto',
@@ -180,7 +180,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'Text',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'WeightBrutto',
                         label: 'Weight brutto',
@@ -195,7 +195,7 @@ module.exports.Init = function (Instance) {
                       },
                       {
                         view: 'lookup',
-                        id: Tools.SID(),
+                        id: _.SID(),
                         formID: ID,
                         name: 'HSCode',
                         label: 'HS code',
@@ -207,7 +207,7 @@ module.exports.Init = function (Instance) {
                   },
                   {
                     view: 'Checkbox',
-                    id: Tools.SID(),
+                    id: _.SID(),
                     formID: ID,
                     name: 'HasVariants',
                     label: 'Has variants',
@@ -216,7 +216,7 @@ module.exports.Init = function (Instance) {
                   },
                   {
                     view: 'lookup',
-                    id: Tools.SID(),
+                    id: _.SID(),
                     formID: ID,
                     name: 'Variation',
                     label: 'Variation',

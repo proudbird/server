@@ -1,4 +1,4 @@
-/* globals Form System Platform Application Tools Cube Master*/
+/* globals Form System Platform Application _ Cube Master*/
 
 Form.Ok = function() {
   Form.Save();

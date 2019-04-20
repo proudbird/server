@@ -36,7 +36,7 @@ View.OptionButton_onItemClick = function(value) {
       // check all attributes, but not currently selected
       continue;
     }
-    const combination = Tools.clone(Current);
+    const combination = _.clone(Current);
     const attributeIndex = getAttributeIndex(attributeKey);
     for(let valueId in Values[attributeKey]) {
       combination.splice(attributeIndex, 1, valueId);
@@ -63,7 +63,7 @@ function setOptionState(element, state) {
 }
 
 function getItem(combination) {
-  return Tools.get(Variations, combination);
+  return _.get(Variations, combination);
 }
 
 function getAttributeIndex(attributeId) {
@@ -115,7 +115,7 @@ async function defineVariations() {
 }
 
 function addOptions() {
-  Tools.forIn(Combinations, (combination, combinationKey) => {
+  _.forIn(Combinations, (combination, combinationKey) => {
     const option = combination.attribute.Name;
     View.Options.addView({
       view: "Group",
