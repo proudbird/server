@@ -8,10 +8,51 @@
   },
   "rows": [
     {
-      "name": "Header",
-      "view": "template",
-      "template": "<h3>Cards</h3>",
-      "height": 60
+      "cols": [
+        {
+          "name": "Header",
+          "view": "template",
+          "template": "<h3>Cards</h3>",
+          "height": 60,
+          "borderless": true
+        },
+        {
+          "rows": [
+            {},
+            {
+              "view": "Button",
+              "name": "User",
+              "type": "image",
+              "width": 40,
+              "height": 40,
+              "value": "User profile",
+              "image": "/img/user.png",
+              "css": "round",
+              "popup": {
+                "view": "Popup",
+                "name": "UserMenu",
+                "body": {
+                  "view": "List",
+                  "name": "UserMenuList",
+                  "data": [
+                    { "id": "logout", "value": "Log out" }
+                  ],
+                  "width": 150,
+                  "select": false,
+                  "autoheight": true,
+                  "events": {
+                    "onItemClick": "UserMenu_onItemClick"
+                  }
+                }
+              }
+            },
+            {}
+          ]
+        },
+        {
+          "width": 10
+        }
+      ]
     },
     {
       "cols": [

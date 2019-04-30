@@ -1,0 +1,26 @@
+{
+  "view": "View",
+  "name": "Users",
+  "header": "Users",
+  "rows": [
+    {
+      "view": "Treetable",
+      "name": "List",
+      "autoConfig": true,
+      "treeType": true,
+      "select": true,
+      "multiselect": true,
+      "resizeColumn":true,
+      "columns": [
+        { "id": "username", "header": "User name", "fillspace": true, "sort": "string" }
+      ],
+      "dynamic": true,
+      "autoUpdate": true,
+      "updateInterval": 30,
+      "query": "function.view.sysUserList",
+      "events": {
+        "onItemDblClick": "List_onItemDblClick"
+      }
+    }
+  ]
+}

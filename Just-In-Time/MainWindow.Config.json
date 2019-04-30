@@ -8,10 +8,24 @@
   },
   "rows": [
     {
-      "name": "Header",
-      "view": "template",
-      "template": "<h3>Just-In-Time</h3>",
-      "height": 60
+      "borderless": true,
+      "cols": [
+        {
+          "name": "Header",
+          "view": "template",
+          "template": "<h3>Just-In-Time</h3>",
+          "height": 60
+        },
+        {
+          "view": "Button",
+          "name": "User",
+          "type": "image",
+          "width": 40,
+          "height": 40,
+          "value": "User profile",
+          "image": "/img/user.png"
+        }
+      ]
     },
     {
       "cols": [

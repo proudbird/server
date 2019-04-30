@@ -1,0 +1,135 @@
+{
+  "view": "View",
+  "name": "User",
+  "header": "User",
+  "rows": [{
+      "view": "Toolbar",
+      "name": "Toolbar",
+      "owner": "User",
+      "composition": "default",
+      "elements": []
+    },
+    {
+      "view": "layout",
+      "name": "Layout",
+      "type": "form",
+      "rows": [{
+        "rows": [{
+            "minWidth": 650,
+            "cols": [{
+                "view": "Lookup",
+                "name": "Parent",
+                "label": "Parent",
+                "labelWidth": 90,
+                "dataLink": "item.Parent",
+                "events": {
+                  "onChange": "Parent_onChange"
+                }
+              },
+              {
+                "view": "Text",
+                "name": "Code",
+                "label": "Code",
+                "labelWidth": 60,
+                "width": 200,
+                "dataLink": "item.Code"
+              }
+            ]
+          },
+          {
+            "view": "Text",
+            "name": "FirstName",
+            "label": "First name",
+            "labelWidth": 90,
+            "dataLink": "item.FirstName"
+          },
+          {
+            "view": "Text",
+            "name": "LastName",
+            "label": "Lasr name",
+            "labelWidth": 90,
+            "dataLink": "item.LastName"
+          },
+          {
+            "cols": [
+              {
+                "view": "Lookup",
+                "name": "Country",
+                "label": "Country",
+                "labelWidth": 90,
+                "dataLink": "item.Country"
+              },
+              {
+                "view": "Text",
+                "name": "PostalCode",
+                "label": "Postal code",
+                "labelWidth": 100,
+                "width": 250,
+                "dataLink": "item.PostalCode"
+              }
+            ]
+          },
+          {
+            "view": "Text",
+            "name": "Address1",
+            "label": "Address 1",
+            "labelWidth": 90,
+            "dataLink": "item.Address1"
+          },
+          {
+            "view": "Text",
+            "name": "Address2",
+            "label": "Address 2",
+            "labelWidth": 90,
+            "dataLink": "item.Address2"
+          },
+          {
+            "view": "Text",
+            "name": "email",
+            "label": "e-mail",
+            "labelWidth": 90,
+            "dataLink": "item.email"
+          },
+          {
+            "view": "Group",
+            "name": "SysUserBox",
+            "rows": [{
+              "view": "Text",
+              "name": "Username",
+              "label": "Username",
+              "labelWidth": 140,
+              "dataLink": "item.Username",
+              "buttons": [
+                {
+                  "name": "lookup",
+                  "action": "UserName_onLookup"
+                },
+                {
+                  "name": "clear"
+                }
+              ]
+            },
+            {
+              "view": "Text",
+              "name": "NewPassword",
+              "label": "New password",
+              "labelWidth": 140,
+              "type": "password",
+              "dataLink": "variables.password"
+            },
+            {
+              "view": "Text",
+              "name": "repeatPassword",
+              "label": "Repeat password",
+              "labelWidth": 140,
+              "type": "password",
+              "dataLink": "variables.repeatPassword"
+            }
+            ]
+          }
+        ]
+      },
+      {}]
+    }
+  ]
+}

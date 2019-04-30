@@ -1,0 +1,64 @@
+{
+    "9ba2e46a-5d56-4952-96c6-01c11f3d6507": {
+        "name": "Cards",
+        "cube": "Cards",
+        "class": "Catalogs",
+        "tableId": "CT_GHZH9ZmD",
+        "title": "Cards",
+        "description": "Cards",
+        "multilevel": true,
+        "multilevelType": "folders",
+        "numberOfLevels": 3,
+        "codeLenght": 6,
+        "codeType": "STRING",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 25,
+        "nameLang": ["ru", "en"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "Layout": {
+                "fieldId": "FL_6a4tP26a",
+                "title": "Layout",
+                "description": "Portrait or landscape",
+                "type": {
+                    "dataType": "NUMBER",
+                    "length": 1,
+                    "fractionalLength": 0
+                },
+                "defaultValue": "Portrait",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "ImagePath": {
+                "fieldId": "FL_qZ5PefSA",
+                "title": "Image",
+                "description": "Path to the image file",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 0
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item+folder",
+                "required": false
+            },
+            "Description": {
+                "fieldId": "FL_hfn29QWW",
+                "title": "Description",
+                "description": "Description",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 0,
+                    "lang": ["ru", "en"]
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

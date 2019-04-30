@@ -1,0 +1,138 @@
+{
+    "88d45688-5840-4b47-acf0-c16bb1b0ee75": {
+        "name": "Users",
+        "cube": "Users",
+        "class": "Catalogs",
+        "tableId": "CT_j4FiiWS7",
+        "title": "Users",
+        "description": "Users",
+        "multilevel": true,
+        "multilevelType": "folders",
+        "numberOfLevels": 2,
+        "codeLenght": 3,
+        "codeType": "INTEGER",
+        "uniqueCode": true,
+        "autoIncrement": true,
+        "nameLenght": 25,
+        "nameLang": ["ru", "en"],
+        "template": "#Name#",
+        "owners": [],
+        "attributes": {
+            "FirstName": {
+                "fieldId": "FL_lZiddeGD",
+                "title": "First name",
+                "description": "First name",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 25,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "LastName": {
+                "fieldId": "FL_H9LpuGTT",
+                "title": "Last name",
+                "description": "Last name",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 25,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "email": {
+                "fieldId": "FL_H85pr5IT",
+                "title": "e-mail",
+                "description": "e-mail",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 50,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Country": {
+                "fieldId": "FL_Q0WA9vgB0",
+                "title": "Country",
+                "description": "Country",
+                "type": {
+                    "dataType": "FK",
+                    "reference": {
+                        "cube": "Main",
+                        "class": "Catalogs",
+                        "modelId": "99d43988-5840-4b47-acf0-c16bb1b0ee75"
+                    }
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Address1": {
+                "fieldId": "FL_afqP7gj6",
+                "title": "Address 1",
+                "description": "Address 1",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 100,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Address2": {
+                "fieldId": "FL_afKzp6j6",
+                "title": "Address 2",
+                "description": "Address 2",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 100,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "PostalCode": {
+                "fieldId": "FL_DDKzp6j6",
+                "title": "Postal code",
+                "description": "Postal code",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 20,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            },
+            "Username": {
+                "fieldId": "FL_gt6pr5IT",
+                "title": "Username",
+                "description": "System username",
+                "type": {
+                    "dataType": "STRING",
+                    "length": 50,
+                    "lang": []
+                },
+                "defaultValue": "",
+                "toolTip": "",
+                "belonging": "item",
+                "required": false
+            }
+        }
+    }
+}

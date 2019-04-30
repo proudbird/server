@@ -1,0 +1,73 @@
+{
+  "view": "View",
+  "name": "Card",
+  "header": "Card",
+  "rows": [{
+      "view": "Toolbar",
+      "name": "Toolbar",
+      "owner": "Card",
+      "composition": "default",
+      "elements": []
+    },
+    {
+      "view": "layout",
+      "name": "Layout",
+      "type": "form",
+      "rows": [{
+        "rows": [{
+            "minWidth": 650,
+            "cols": [{
+                "view": "Lookup",
+                "name": "Parent",
+                "label": "Parent",
+                "labelWidth": 90,
+                "dataLink": "item.Parent",
+                "events": {
+                  "onChange": "Parent_onChange"
+                }
+              },
+              {
+                "view": "Text",
+                "name": "Code",
+                "label": "Code",
+                "labelWidth": 60,
+                "width": 200,
+                "dataLink": "item.Code"
+              }
+            ]
+          },
+          {
+            "view": "Text",
+            "name": "Name",
+            "label": "Name",
+            "labelWidth": 90,
+            "dataLink": "item.Name"
+          },
+          {
+            "view": "Text",
+            "name": "ImagePath",
+            "label": "Image",
+            "labelWidth": 90,
+            "dataLink": "item.ImagePath",
+            "buttons": [
+              {
+                "name": "lookup",
+                "action": "ImagePath_onLookup"
+              },
+              {
+                "name": "clear"
+              }
+            ]
+          },
+          {
+            "view": "Text",
+            "name": "Description",
+            "label": "Description",
+            "labelWidth": 90,
+            "dataLink": "item.Description"
+          }
+        ]
+      }]
+    }
+  ]
+}

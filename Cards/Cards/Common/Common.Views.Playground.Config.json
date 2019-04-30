@@ -2,8 +2,11 @@
   "view": "View",
   "name": "Playground",
   "header": "Playground",
-  "rows": [{
-    "view": "video",
-    "userMedia": true
-  }]
+  "rows": [
+    {
+      "view": "Video",
+      "name": "Mirror",
+      "controls": false
+    }
+  ]
 }

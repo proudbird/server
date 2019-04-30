@@ -4,7 +4,7 @@
   "description": "cubismo server",
   "main": "server.js",
   "scripts": {
-    "build": "rollup -c ./node_modules/cubismo/rollup.config.js",
+    "build": "rollup -c ./node_modules/cubismo/rollup.config.js ",
     "watch": "rollup -c ./node_modules/cubismo/rollup.config.js --watch"
   },
   "repository": {
@@ -18,7 +18,15 @@
   },
   "homepage": "https://github.com/proudbird/server#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
+    "catalogist": "0.0.14",
     "cubismo": "^0.3.0",
+    "directory-tree": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "map-keys-deep-lodash": "^1.2.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
     "webix": "^6.2.1"
   },
   "devDependencies": {
