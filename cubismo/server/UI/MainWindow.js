@@ -1,0 +1,2 @@
+/* global Tools */
+"use strict";

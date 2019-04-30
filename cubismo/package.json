@@ -1,0 +1,45 @@
+{
+   "author": {
+    "name": "Max Orlov",
+    "email": "proudbird.mail@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/proudbird/cubismo/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "debug": "^4.1.1",
+    "deepdash": "^3.1.3",
+    "express": "^4.16.2",
+    "express-fileupload": "^1.1.3-alpha.2",
+    "mkdirp": "^0.5.1",
+    "npm": "^6.0.1",
+    "numerator": "^0.2.0",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0",
+    "shortid": "^2.2.8",
+    "socket.io": "^2.1.0"
+  },
+  "description": "A powerful platform for developing and managing cross-platform business applications, based on WEB-technologies",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/proudbird/cubismo#readme",
+  "keywords": [
+    "platform",
+    "business",
+    "SDK",
+    "framework",
+    "webix"
+  ],
+  "license": "GPL-2.0-or-later",
+  "main": "cubismo.js",
+  "name": "cubismo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proudbird/cubismo.git"
+  },
+  "version": "0.3.2"
+}

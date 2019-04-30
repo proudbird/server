@@ -19,7 +19,6 @@
   "homepage": "https://github.com/proudbird/server#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "catalogist": "0.0.14",
     "cubismo": "^0.3.0",
     "directory-tree": "^2.2.1",
     "jsonwebtoken": "^8.5.1",
