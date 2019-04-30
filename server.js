@@ -1,3 +1,3 @@
 
-const cubismo = require("cubismo");
+const cubismo = require("./cubismo");
 cubismo.run(__dirname, 21021);
