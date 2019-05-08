@@ -8,6 +8,7 @@ const Application = require("./Application.js");
 var Platform = module.exports = {};
 
 //Platform.Applications = require("./Applications");
+platform.dir = root;
 Platform.Forms   = {};
 Platform.Clients = {};
 
